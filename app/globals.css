@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F5F0EB;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color: #F5F0EB;
+  color: #000000;
+  line-height: 1.4;
+  font-size: 13px;
+}
+
+a {
+  color: rgb(242, 159, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+.header {
+  background-color: rgb(74, 103, 81);
+  color: #ffffff;
+  padding: 0;
+  border-bottom: 4px solid rgb(242, 159, 1);
+}
+
+.header-content {
+  display: flex;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo-nav .logo-img {
+  height: auto;
+  max-height: 45px;
+  width: auto;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding-left: 20px;
+  align-items: flex-end;
+}
+
+.side-deal {
+  font-size: 11px;
+  color: #ffffff;
+  text-align: right;
+  line-height: 1.4;
+  padding-top: 10px;
+}
+
+/* Folder-style tab navigation */
+.nav-tabs {
+  display: flex;
+  gap: 0;
+  padding-left: 0;
+}
+
+.nav-tabs-top {
+  margin-top: 39px;
+  margin-left: auto;
+}
+
+.nav-tab-top {
+  display: inline-block;
+  padding: 4px 10px 0 10px;
+  background-color: rgb(74, 103, 81);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 2px;
+  margin-bottom: 0;
+  position: relative;
+  top: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.nav-tab-top:hover {
+  background-color: rgb(90, 120, 95);
+  color: #ffffff;
+}
+
+.nav-tab-top.active {
+  background-color: rgb(242, 159, 1);
+  color: #ffffff;
+  border: none;
+  z-index: 1;
+}
+
+/* Content container */
+.content-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #ffffff;
+  padding: 10px 40px 10px 20px;
+}
+
+.product-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  flex: 0 0 50%;
+  padding: 10px 20px 10px 0;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-header {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.product-price {
+  font-size: 32px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1px;
+  line-height: 1.1;
+  text-align: right;
+}
+
+.shipping {
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.product-info-section {
+  margin-bottom: 15px;
+}
+
+.product-info-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.product-label {
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  margin-right: 5px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.product-value {
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+  flex: 1;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.product-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+.product-divider-top {
+  margin-bottom: 6px;
+}
+
+.product-divider-bottom {
+  margin-top: 6px;
+}
+
+.want-button {
+  background-image: url('/i-want-one-button.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  padding: 0;
+  padding-right: 40px;
+  width: 250px;
+  height: 75px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: auto;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.want-button:active {
+  background-image: url('/i-want-one-button-2.gif');
+}
+
+/* Product description section */
+.description-section {
+  background-color: rgb(74, 103, 81);
+  color: #ffffff;
+  padding: 0;
+  border-top: 4px solid rgb(242, 159, 1);
+}
+
+.tabs-bottom {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 40px;
+  background-color: rgb(60, 85, 67);
+}
+
+.tab-bottom {
+  padding: 4px 10px 4px 10px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 2px;
+}
+
+.tab-bottom.active {
+  background-color: rgb(74, 103, 81);
+  color: #ffffff;
+}
+
+.tab-bottom:hover {
+  background-color: rgb(70, 95, 75);
+  color: #ffffff;
+}
+
+.tab-content {
+  padding: 20px 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.description-headline {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.description-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.description-text p {
+  margin-bottom: 15px;
+}
+
+.features-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.features-list li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.features-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgb(242, 159, 1);
+}
+
+.warranty {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.features-title {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #999999;
+  font-size: 11px;
+  margin-top: 40px;
+}
+
+/* Page content styles */
+.page-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: lowercase;
+}
+
+.page-content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.page-content p {
+  margin-bottom: 15px;
+}
+
