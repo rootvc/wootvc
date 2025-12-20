@@ -14,9 +14,9 @@ export default function WhatIsRoot() {
             <nav className="nav-tabs nav-tabs-top">
               <a href="/" className="nav-tab-top">current drop</a>
               <a href="/past-drops" className="nav-tab-top">past drops</a>
+              <a href="/what-is-root" className="nav-tab-top active">what is root?</a>
               <a href="https://root.vc" target="_blank" rel="noopener noreferrer" className="nav-tab-top">terminal</a>
               <a href="https://root.vc/welcome.htm" target="_blank" rel="noopener noreferrer" className="nav-tab-top">website</a>
-              <a href="/what-is-root" className="nav-tab-top active">what is root?</a>
             </nav>
           </div>
         </div>
@@ -40,10 +40,11 @@ export default function WhatIsRoot() {
         </div>
       </main>
       <footer className="footer">
-        Made by Root Ventures, obvious parody of the <a href="https://web.archive.org/web/20070711053852/http://www.woot.com/" target="_blank" rel="noopener noreferrer">original woot.com</a>
+        Made by <a href="https://root.vc" target="_blank" rel="noopener noreferrer">Root Ventures</a>, obvious parody of the <a href="https://web.archive.org/web/20070711053852/http://www.woot.com/" target="_blank" rel="noopener noreferrer">original woot.com</a>
+        <br />
+        Please, don't sue us, Amazon
       </footer>
       </div>
     </div>
   )
 }
-

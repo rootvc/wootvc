@@ -439,7 +439,8 @@ a:hover {
   margin-top: 6px;
 }
 
-.want-button {
+.want-button,
+a.want-button {
   background-image: url('/i-want-one-button.gif');
   background-size: contain;
   background-repeat: no-repeat;
@@ -457,6 +458,12 @@ a:hover {
   display: block;
   text-indent: -9999px;
   overflow: hidden;
+  text-decoration: none;
+}
+
+.want-button:active,
+a.want-button:active {
+  background-image: url('/i-want-one-button-2.gif');
 }
 
 .want-button:active {
@@ -588,5 +595,112 @@ a:hover {
 
 .page-content p {
   margin-bottom: 15px;
+}
+
+/* Deals grid */
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.deal-card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+}
+
+.deal-image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+}
+
+.deal-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deal-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 1.3;
+  color: #000000;
+}
+
+.deal-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(45, 80, 22, 0.95);
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.deal-tooltip-content {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.deal-tooltip-header {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.deal-tooltip-body {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .deals-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .deal-title {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .deal-tooltip {
+    padding: 15px;
+  }
+
+  .deal-tooltip-content {
+    font-size: 12px;
+  }
+
+  .deal-tooltip-header {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .deal-tooltip-body {
+    font-size: 12px;
+  }
 }
 

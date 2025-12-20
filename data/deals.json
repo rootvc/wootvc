@@ -1,0 +1,48 @@
+{
+  "deals": [
+    {
+      "heroImageURL": "/hero1.png",
+      "title": "Vintage Typewriter - Mechanical Keyboard Edition",
+      "price": "89.99",
+      "shipping": "12",
+      "condition": "Refurbished",
+      "products": "1 Vintage Typewriter with custom mechanical switches",
+      "checkoutUrl": "https://stripe.com/checkout/123",
+      "productInfoHeader": "Experience the satisfying clack of vintage typing!",
+      "productInfoBody": "This beautifully restored typewriter features custom mechanical keyboard switches for the modern enthusiast.<br/>Perfect for writers, collectors, and anyone who appreciates tactile feedback."
+    },
+    {
+      "heroImageURL": "/hero2.png",
+      "title": "Root Ventures Coffee Mug - Limited Edition",
+      "price": "24.99",
+      "shipping": "5",
+      "condition": "New",
+      "products": "1 Root Ventures branded ceramic coffee mug",
+      "checkoutUrl": "https://stripe.com/checkout/456",
+      "productInfoHeader": "Start your day with Root Ventures!",
+      "productInfoBody": "This premium ceramic mug features our logo and is perfect for your morning coffee or afternoon tea.<br/>Dishwasher safe and made to last."
+    },
+    {
+      "heroImageURL": "/hero3.png",
+      "title": "Deep Tech T-Shirt - Engineers Unite",
+      "price": "29.99",
+      "shipping": "5",
+      "condition": "New",
+      "products": "1 Deep Tech themed t-shirt, various sizes available",
+      "checkoutUrl": "https://stripe.com/checkout/789",
+      "productInfoHeader": "Show your engineering pride!",
+      "productInfoBody": "Soft cotton blend t-shirt with a subtle deep tech design.<br/>Available in multiple sizes and colors.<br/>Machine washable."
+    },
+    {
+      "heroImageURL": "/hero4.png",
+      "title": "Root Ventures Hoodie - Cozy Coding Edition",
+      "price": "59.99",
+      "shipping": "8",
+      "condition": "New",
+      "products": "1 Root Ventures hoodie, perfect for late-night coding sessions",
+      "checkoutUrl": "https://stripe.com/checkout/101",
+      "productInfoHeader": "Stay warm while you code!",
+      "productInfoBody": "Premium hoodie with Root Ventures branding.<br/>Soft fleece lining, adjustable hood, and kangaroo pocket.<br/>Perfect for those long debugging sessions."
+    }
+  ]
+}
