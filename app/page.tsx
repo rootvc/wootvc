@@ -1,11 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import { currentProduct } from '@/data/product'
+import { getCurrentDeal } from '@/data/deals'
 import Header from './components/Header'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'info' | 'stats'>('info')
+  const currentDeal = getCurrentDeal()
 
   return (
     <div>
@@ -16,8 +17,8 @@ export default function Home() {
         <div className="product-section">
           <div className="product-image">
             <img
-              src={currentProduct.image}
-              alt={currentProduct.title}
+              src={currentDeal.heroImageURL}
+              alt={currentDeal.title}
               onError={(e) => {
                 // Fallback to a placeholder if image doesn't exist
                 const target = e.target as HTMLImageElement;
@@ -28,27 +29,31 @@ export default function Home() {
 
           <div className="product-details">
             <div className="product-header">
-              <h1 className="product-title">{currentProduct.title}</h1>
-              <div className="product-price">${currentProduct.price.toFixed(2)}</div>
-              <div className="shipping">+ ${currentProduct.shipping} shipping</div>
+              <h1 className="product-title">{currentDeal.title}</h1>
+              <div className="product-price">${currentDeal.price}</div>
+              <div className="shipping">
+                {currentDeal.shipping.toLowerCase() === 'free' 
+                  ? `+ ${currentDeal.shipping} shipping`
+                  : `+ $${currentDeal.shipping} shipping`}
+              </div>
             </div>
 
             <div className="product-info-section">
               <hr className="product-divider product-divider-top" />
               <div className="product-info-row">
                 <span className="product-label">CONDITION:</span>
-                <span className="product-value">{currentProduct.condition}</span>
+                <span className="product-value">{currentDeal.condition}</span>
               </div>
               <div className="product-info-row">
                 <span className="product-label">PRODUCT(S):</span>
                 <div className="product-value">
-                  1 {currentProduct.title} {currentProduct.sku}
+                  {currentDeal.products}
                 </div>
               </div>
               <hr className="product-divider product-divider-bottom" />
             </div>
 
-            <button className="want-button">I want one!</button>
+            <a href={currentDeal.checkoutUrl} target="_blank" rel="noopener noreferrer" className="want-button">I want one!</a>
           </div>
         </div>
       </main>
@@ -72,25 +77,8 @@ export default function Home() {
 
         {activeTab === 'info' && (
           <div className="tab-content">
-            <h2 className="description-headline">Only The Phonely</h2>
-            <div className="description-text">
-              {currentProduct.description.split('\n\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
-            </div>
-
-            {currentProduct.warranty && (
-              <div className="warranty">
-                <strong>Warranty:</strong> {currentProduct.warranty}
-              </div>
-            )}
-
-            <div className="features-title">Features:</div>
-            <ul className="features-list">
-              {currentProduct.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
+            <h2 className="description-headline">{currentDeal.productInfoHeader}</h2>
+            <div className="description-text" dangerouslySetInnerHTML={{ __html: currentDeal.productInfoBody }} />
           </div>
         )}
 
