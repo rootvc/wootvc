@@ -13,11 +13,7 @@ export default function WhatIsRoot() {
           <h1 className="page-title">what is root?</h1>
           <div className="page-content">
             <p>
-              Root Ventures is a San Francisco-based deep tech seed fund. As engineers
-              ourselves, we specialize in leading initial funding for founders tackling
-              new technical opportunities. Our initial investments typically range from
-              $2-5M. With a selective few new deals a year and more than half of our funds in
-              reserve, we are committed to being a long-term partner.
+              Root Ventures is a San Francisco-based deep tech seed fund. We write $2-5M checks to technical founding teams. Send us your cool friends and enemies.
             </p>
             <p>
               Learn more here: <a href="https://root.vc" target="_blank" rel="noopener noreferrer">https://root.vc</a>
