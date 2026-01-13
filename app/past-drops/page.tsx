@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { getPastDeals } from '@/data/deals'
+import Header from '../components/Header'
 
 export default function PastDrops() {
   const pastDeals = getPastDeals()
@@ -10,23 +11,7 @@ export default function PastDrops() {
   return (
     <div>
       <div className="content-container">
-      {/* Header */}
-      <header className="header">
-        <div className="header-content">
-          <a href="/" className="logo-nav">
-            <img src="/woot-logo.gif" alt="woot!" className="logo-img" />
-          </a>
-          <div className="header-right">
-            <nav className="nav-tabs nav-tabs-top">
-              <a href="/" className="nav-tab-top">current drop</a>
-              <a href="/past-drops" className="nav-tab-top active">past drops</a>
-              <a href="/what-is-root" className="nav-tab-top">what is root?</a>
-              <a href="https://root.vc" target="_blank" rel="noopener noreferrer" className="nav-tab-top">terminal</a>
-              <a href="https://root.vc/welcome.htm" target="_blank" rel="noopener noreferrer" className="nav-tab-top">website</a>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header activeTab="past-drops" />
       {/* Main Content */}
       <main className="main-content">
         <div className="page-section">
@@ -73,4 +58,3 @@ export default function PastDrops() {
     </div>
   )
 }
-

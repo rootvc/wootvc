@@ -26,3 +26,7 @@ export const getPastDeals = (): Deal[] => {
   return deals.slice(0, -1)
 }
 
+
+export function hasMultipleDeals(): boolean {
+  return deals.length > 1
+}
