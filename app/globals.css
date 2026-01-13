@@ -358,7 +358,6 @@ a:hover {
 .product-image img {
   width: 100%;
   height: auto;
-  border: 1px solid #cccccc;
 }
 
 .product-details {
@@ -440,14 +439,16 @@ a:hover {
 }
 
 .want-button,
-a.want-button {
+a.want-button,
+img.want-button {
   background-image: url('/i-want-one-button.gif');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   color: transparent;
-  border: none;
+  border: none !important;
+  outline: none;
   padding: 0;
   padding-right: 40px;
   width: 250px;
@@ -535,6 +536,32 @@ a.want-button:active {
 
 .description-text p {
   margin-bottom: 15px;
+}
+
+.description-text dl {
+  margin: 0;
+  padding: 0;
+}
+
+.description-text dt {
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+}
+
+.description-text dt::after {
+  content: ": ";
+}
+
+.description-text dd {
+  display: inline;
+  margin: 0;
+}
+
+.description-text dd::after {
+  content: "\A";
+  white-space: pre;
+  margin-bottom: 8px;
 }
 
 .features-list {

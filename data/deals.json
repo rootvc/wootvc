@@ -1,15 +1,17 @@
 {
   "deals": [
     {
-      "heroImageURL": "/hero1.png",
+      "heroImageURL": "/simple-sabotage.png",
+      "shareImageURL": "/simple-sabotage-share.png",
       "title": "Simple Sabotage Field Manual",
-      "price": "1",
+      "price": "10",
       "shipping": "Free",
       "condition": "New",
       "products": "1 Simple Sabotage Field Manual",
-      "checkoutUrl": "https://stripe.com/checkout/123",
+      "checkoutUrl": "https://buy.stripe.com/9B600lehRgch3ZAfSZ2ZO00",
       "productInfoHeader": "Defend your organization against sabotage!",
-      "productInfoBody": "The Simple Sabotage Field Manual, created in 1944 by the Office of Strategic Services (precursor to the CIA), served as a covert guide for resistance fighters in Axis territories to disrupt operations via subtle inefficiencies, not outright destruction. It detailed tactics like rigid rule adherence, excessive meetings, endless committees, misrouted communications, and promoting unqualified staff to create chaos. We've reprinted the manual as a modern diagnostic for identifying and eliminating these habits.<br/><br/>This version has been manually re-typeset from the original, and with the exception of a foreword, is a faithful reproduction. The original is available here: <a href='https://www.cia.gov/static/5c875f3ec660e092cf893f60b4a288df/SimpleSabotage.pdf'>https://www.cia.gov/static/5c875f3ec660e092cf893f60b4a288df/SimpleSabotage.pdf</a><br/><br/>All proceeds will be donated to the Exploratorium in San Francisco: <a href='https://www.exploratorium.edu/'>https://www.exploratorium.edu/</a>"
+      "productInfoBody": "The Simple Sabotage Field Manual, created in 1944 by the Office of Strategic Services (precursor to the CIA), served as a covert guide for resistance fighters in Axis territories to disrupt operations via subtle inefficiencies, not outright destruction. It detailed tactics like rigid rule adherence, excessive meetings, endless committees, misrouted communications, and promoting unqualified staff to create chaos. We've reprinted the manual as a modern diagnostic for identifying and eliminating these habits.<br/><br/>This version has been manually re-typeset from the original, and with the exception of a foreword, is a faithful reproduction. The original is available <a href='https://www.cia.gov/static/5c875f3ec660e092cf893f60b4a288df/SimpleSabotage.pdf'>here</a>.<br/><br/>All proceeds will be donated to the <a href='https://www.exploratorium.edu/'>Exploratorium</a> in San Francisco.",
+      "productStats": "<dl><dt>Weight</dt><dd>56.6g</dd><dt>Dimensions</dt><dd>4.5\" x 7.5\"</dd><dt>Page count</dt><dd>34</dd><dt>Format</dt><dd>Paperback</dd><dt>Vibes</dt><dd>Immaculate</dd></dl>"
     }
   ]
 }

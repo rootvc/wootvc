@@ -1,10 +1,7 @@
-import type { Metadata } from 'next'
 import './globals.css'
+import { metadata } from './lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'Woot! VC - One Day, One Deal',
-  description: 'Woot! VC - One Day, One Deal',
-}
+export { metadata }
 
 export default function RootLayout({
   children,

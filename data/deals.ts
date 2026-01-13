@@ -10,6 +10,8 @@ export interface Deal {
   checkoutUrl: string
   productInfoHeader: string
   productInfoBody: string
+  productStats: string
+  shareImageURL: string
 }
 
 export interface DealsData {
@@ -26,7 +28,6 @@ export const getPastDeals = (): Deal[] => {
   return deals.slice(0, -1)
 }
 
-
-export function hasMultipleDeals(): boolean {
+export const hasMultipleDeals = (): boolean => {
   return deals.length > 1
 }

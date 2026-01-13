@@ -7,6 +7,7 @@ import Header from './components/Header'
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'info' | 'stats'>('info')
   const currentDeal = getCurrentDeal()
+  const isSoldOut = process.env.NEXT_PUBLIC_SOLD_OUT === 'true'
 
   return (
     <div>
@@ -53,7 +54,21 @@ export default function Home() {
               <hr className="product-divider product-divider-bottom" />
             </div>
 
-            <a href={currentDeal.checkoutUrl} target="_blank" rel="noopener noreferrer" className="want-button">I want one!</a>
+            {isSoldOut ? (
+              <img 
+                src="/sold-out-button.gif" 
+                alt="Sold Out" 
+                className="want-button"
+                style={{ cursor: 'not-allowed', pointerEvents: 'none', border: 'none', outline: 'none' }}
+                onError={(e) => {
+                  // Fallback to a placeholder if image doesn't exist
+                  const target = e.target as HTMLImageElement;
+                  target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="50"%3E%3Crect width="200" height="50" fill="%23ccc"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23666" font-family="Arial" font-size="14"%3ESold Out%3C/text%3E%3C/svg%3E';
+                }}
+              />
+            ) : (
+              <a href={currentDeal.checkoutUrl} target="_blank" rel="noopener noreferrer" className="want-button">I want one!</a>
+            )}
           </div>
         </div>
       </main>
@@ -85,9 +100,7 @@ export default function Home() {
         {activeTab === 'stats' && (
           <div className="tab-content">
             <h2 className="description-headline">Product Statistics</h2>
-            <div className="description-text">
-              <p>Product statistics will be displayed here.</p>
-            </div>
+            <div className="description-text" dangerouslySetInnerHTML={{ __html: currentDeal.productStats }} />
           </div>
         )}
       </section>
