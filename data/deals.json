@@ -1,17 +1,23 @@
 {
   "deals": [
     {
-      "heroImageURL": "/simple-sabotage.png",
-      "shareImageURL": "/simple-sabotage-share.png",
+      "date": "2026-01-13",
       "title": "Simple Sabotage Field Manual",
+      "heroImageURL": "/simple-sabotage.png",
       "price": "10",
       "shipping": "Free",
       "condition": "New",
       "products": "1 Simple Sabotage Field Manual",
       "checkoutUrl": "https://buy.stripe.com/9B600lehRgch3ZAfSZ2ZO00",
       "productInfoHeader": "Defend your organization against sabotage!",
-      "productInfoBody": "The Simple Sabotage Field Manual, created in 1944 by the Office of Strategic Services (precursor to the CIA), served as a covert guide for resistance fighters in Axis territories to disrupt operations via subtle inefficiencies, not outright destruction. It detailed tactics like rigid rule adherence, excessive meetings, endless committees, misrouted communications, and promoting unqualified staff to create chaos. We've reprinted the manual as a modern diagnostic for identifying and eliminating these habits.<br/><br/>This version has been manually re-typeset from the original, and with the exception of a foreword, is a faithful reproduction. The original is available <a href='https://www.cia.gov/static/5c875f3ec660e092cf893f60b4a288df/SimpleSabotage.pdf'>here</a>.<br/><br/>All proceeds will be donated to the <a href='https://www.exploratorium.edu/'>Exploratorium</a> in San Francisco.",
-      "productStats": "<dl><dt>Weight</dt><dd>56.6g</dd><dt>Dimensions</dt><dd>4.5\" x 7.5\"</dd><dt>Page count</dt><dd>34</dd><dt>Format</dt><dd>Paperback</dd><dt>Vibes</dt><dd>Immaculate</dd></dl>"
+      "body1": "The Simple Sabotage Field Manual, created in 1944 by the Office of Strategic Services (precursor to the CIA), served as a covert guide for resistance fighters in Axis territories to disrupt operations via subtle inefficiencies, not outright destruction. It detailed tactics like rigid rule adherence, excessive meetings, endless committees, misrouted communications, and promoting unqualified staff to create chaos. We've reprinted the manual as a modern diagnostic for identifying and eliminating these habits.",
+      "body2": "This version has been manually re-typeset from the original, and with the exception of a foreword, is a faithful reproduction. The original is available <a href='https://www.cia.gov/static/5c875f3ec660e092cf893f60b4a288df/SimpleSabotage.pdf'>here</a>.",
+      "donations": "All proceeds will be donated to the <a href='https://www.exploratorium.edu/'>Exploratorium</a> in San Francisco.",
+      "productStats": "<dl><dt>Weight</dt><dd>56.6g</dd><dt>Dimensions</dt><dd>4.5\" x 7.5\"</dd><dt>Page count</dt><dd>34</dd><dt>Format</dt><dd>Paperback</dd><dt>Vibes</dt><dd>Immaculate</dd></dl>",
+      "shareTitle": "Simple Sabotage Manual - Woot! VC by Root VC",
+      "shareDescription": "A professional guide to accomplishing absolutely nothing, inspired by the OSS's original effective handbook. Ideal for anyone committed to inefficiency, procedural purity, and the quiet confidence of being the reason nothing works.",
+      "shareImageURL": "/simple-sabotage-share.png",
+      "bodyTweetCode": "<p lang=\"en\" dir=\"ltr\">Emilie's committee principle below is an absolutely foolproof way to prevent the CIA field manual for sabotage from being used in your company <a href=\"https://t.co/8c9hT4vFfu\">https://t.co/8c9hT4vFfu</a> <a href=\"https://t.co/EaAO4Biywf\">pic.twitter.com/EaAO4Biywf</a></p>&mdash; Garry Tan (@garrytan) <a href=\"https://twitter.com/garrytan/status/1986814718389239890?ref_src=twsrc%5Etfw\">November 7, 2025</a>"
     }
   ]
 }

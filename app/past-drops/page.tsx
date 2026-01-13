@@ -38,7 +38,8 @@ export default function PastDrops() {
                     <div className="deal-tooltip">
                       <div className="deal-tooltip-content">
                         <div className="deal-tooltip-header">{deal.productInfoHeader}</div>
-                        <div className="deal-tooltip-body" dangerouslySetInnerHTML={{ __html: deal.productInfoBody }} />
+                        <div className="deal-tooltip-body" dangerouslySetInnerHTML={{ __html: deal.body1 }} />
+                        <div className="deal-tooltip-body" dangerouslySetInnerHTML={{ __html: deal.body2 }} />
                       </div>
                     </div>
                   )}

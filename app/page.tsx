@@ -1,11 +1,10 @@
 'use client'
 
-import { useState } from 'react'
 import { getCurrentDeal } from '@/data/deals'
 import Header from './components/Header'
+import ProductInfo from './components/ProductInfo'
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<'info' | 'stats'>('info')
   const currentDeal = getCurrentDeal()
   const isSoldOut = process.env.NEXT_PUBLIC_SOLD_OUT === 'true'
 
@@ -73,37 +72,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Product Description Section */}
-      <section className="description-section">
-        <div className="tabs-bottom">
-          <button
-            className={`tab-bottom ${activeTab === 'info' ? 'active' : ''}`}
-            onClick={() => setActiveTab('info')}
-          >
-            product info
-          </button>
-          <button
-            className={`tab-bottom ${activeTab === 'stats' ? 'active' : ''}`}
-            onClick={() => setActiveTab('stats')}
-          >
-            product stats
-          </button>
-        </div>
-
-        {activeTab === 'info' && (
-          <div className="tab-content">
-            <h2 className="description-headline">{currentDeal.productInfoHeader}</h2>
-            <div className="description-text" dangerouslySetInnerHTML={{ __html: currentDeal.productInfoBody }} />
-          </div>
-        )}
-
-        {activeTab === 'stats' && (
-          <div className="tab-content">
-            <h2 className="description-headline">Product Statistics</h2>
-            <div className="description-text" dangerouslySetInnerHTML={{ __html: currentDeal.productStats }} />
-          </div>
-        )}
-      </section>
+      <ProductInfo deal={currentDeal} />
       <footer className="footer">
         Made by Root Ventures, obvious parody of the original woot.com. Please don't sue us, Amazon.
       </footer>
