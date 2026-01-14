@@ -778,5 +778,9 @@ a.want-button:active {
   .deal-tooltip-body {
     font-size: 12px;
   }
+
+  .description-text.body2-text {
+    margin-top: 0;
+  }
 }
 
