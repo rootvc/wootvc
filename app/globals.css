@@ -564,6 +564,55 @@ a.want-button:active {
   margin-bottom: 8px;
 }
 
+.description-text img {
+  width: 66.67%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+}
+
+.description-text.body2-text {
+  margin-top: -180px;
+}
+
+.tweet-embed-container {
+  margin: 15px 0 calc((14px * 1.6) - (900px * (1 - 0.8))) 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: scale(0.8);
+  transform-origin: center top;
+}
+
+.tweet-embed-container blockquote.twitter-tweet {
+  max-width: 550px;
+  width: 100%;
+  min-height: 900px;
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tweet-embed-container blockquote.twitter-tweet iframe {
+  display: block;
+}
+
+.tweet-embed-container blockquote.twitter-tweet:not(:has(iframe)) {
+  display: flex;
+}
+
+.tweet-embed-container blockquote.twitter-tweet p,
+.tweet-embed-container blockquote.twitter-tweet * {
+  text-align: center !important;
+}
+
+.tweet-embed-container blockquote.twitter-tweet a {
+  text-decoration: none;
+}
+
 .features-list {
   list-style: none;
   margin-top: 20px;

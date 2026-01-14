@@ -33,7 +33,7 @@ export default function ProductInfo({ deal }: ProductInfoProps) {
           <h2 className="description-headline">{deal.productInfoHeader}</h2>
           <div className="description-text" dangerouslySetInnerHTML={{ __html: deal.body1 }} />
           {deal.bodyTweetCode && <TweetEmbed tweetHtml={deal.bodyTweetCode} />}
-          <div className="description-text" dangerouslySetInnerHTML={{ __html: deal.body2 }} />
+          <div className="description-text body2-text" dangerouslySetInnerHTML={{ __html: deal.body2 }} />
           {deal.donations && (
             <div className="description-text" dangerouslySetInnerHTML={{ __html: deal.donations }} />
           )}
